@@ -10,23 +10,13 @@
   </head>
 
   <body>
-    <div class="header">
-    <div class="head-left">
-     {{with .Site.Params.pfp}}
-     <a href="/">
-      <img src="{{absURL . }}" alt="Profile Picture" >
-      </a>
-     {{end}}
-    </div>
-    <div class="head-right">
+    <div class="navBox">
     <nav>
-    <ul class="menu">
+    <ul class="navlist">
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end }}
     </ul>
- 
     </nav>
-    </div>  
+    
     </div>
-    <hr/>

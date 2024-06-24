@@ -49,3 +49,39 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+.head-left {
+  flex-shrink: 0;
+}
+.head-left img {
+  width: 180px;
+  aspect-ratio: 1 / 1;
+  object-fit: fill;
+}
+.head-right {
+  
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+
+  
+}
+.navBox {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  padding: 1em;
+  background: #000;
+  float: left;
+}
+
+.header {
+  display: flex;
+  align-items: end;
+}
+
+.navlist { 
+  display: flex;
+  gap: 1em;
+}
+
